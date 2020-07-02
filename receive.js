@@ -26,7 +26,7 @@ async function main() {
   const subscription = consumerClient.subscribe({
     processEvents: async (events, context) => {
       for (const event of events) {
-        console.log('↼ Received the following event ⇀');
+        console.log('↼--- Received the following event ---⇀');
         console.log(event.body);
       }
       // Update the checkpoint.
